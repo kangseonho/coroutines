@@ -2,7 +2,7 @@ package scopebuilder
 
 import kotlinx.coroutines.*;
 
-//하나의 스레드 안에서 여러 코드 블럭 수행
+//하나의 스레드 안에서 여러 코드 블럭 수행.
 fun delay() = runBlocking {
     launch {
         println("launch: ${Thread.currentThread().name}")

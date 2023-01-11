@@ -8,7 +8,7 @@ suspend fun world() {
     println("world")
 }
 
-suspend fun hello() = runBlocking {
+suspend fun hello() {
     println("runBlocking: ${Thread.currentThread().name}")
     delay(100L)
     println("Hello")
